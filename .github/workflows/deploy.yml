@@ -33,6 +33,10 @@ jobs:
           echo "Contents of dist folder:"
           ls dist  # Check if the folder exists
 
+      - name: Copy 404 page
+        run: cp dist/index.html dist/404.html
+
+
       - name: Disable Jekyll
         run: echo > dist/.nojekyll
 
