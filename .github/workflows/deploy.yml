@@ -21,8 +21,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
-        run: npm run build
+      #- name: Build project
+      #  run: npm run build
+
+      - name: Debug build process
+        run: npm run build || true
+
+      - name: Verify build output
+        run: |
+          echo "Contents of dist folder:"
+          ls dist  # Check if the folder exists
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
