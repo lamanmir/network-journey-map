@@ -33,6 +33,9 @@ jobs:
           echo "Contents of dist folder:"
           ls dist  # Check if the folder exists
 
+      - name: Disable Jekyll
+        run: echo > dist/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
