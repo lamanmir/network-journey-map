@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: '/network-journey-map/',
   plugins: [
     react(),
     createHtmlPlugin({
