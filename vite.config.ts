@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       input: 'index.html'
     },
+    outDir: 'dist',
   },
   resolve: {
     alias: {
