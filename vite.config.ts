@@ -16,8 +16,8 @@ export default defineConfig(({ mode }) => ({
     createHtmlPlugin({
       minify: true,  // Optional: Minifies the HTML output
     }),
-    mode === 'development' &&
-    componentTagger(),
+    //mode === 'development' &&
+    //componentTagger(),
   ].filter(Boolean),
   build: {
     rollupOptions: {
