@@ -21,7 +21,8 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
   build: {
     rollupOptions: {
-      input: 'index.html'
+      input: 'index.html',
+      sourcemap: true,
     },
     outDir: 'dist',
   },
